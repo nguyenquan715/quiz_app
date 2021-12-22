@@ -1,0 +1,13 @@
+.review-status{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .answer-status{
+    color: white;
+    padding: 15px;
+    background-color: orange;
+    font-size: 20px;
+    margin: 5px 0;
+    width: 30%;    
+  }
+}
