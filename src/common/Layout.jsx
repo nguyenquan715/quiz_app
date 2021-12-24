@@ -1,4 +1,5 @@
 import '../assets/css/layout.scss';
+import { PAGE } from './../constants/constants';
 
 export const Layout = (props) => {
   return (
@@ -7,7 +8,7 @@ export const Layout = (props) => {
       <div className="main-content">
         {props.children}
       </div>
-      <Footer/>
+      <Footer handleClickPage={(id) => props.handleClickPage(id)}/>
     </div>
   );
 }
@@ -42,9 +43,9 @@ const Footer = (props) => {
   return (
     <div className="footer">
       <div className="button-block">
-        <button className="info">Quiz</button>
-        <button className="info">Review</button>
-        <button className="primary">Submit Quiz</button>
+        <button className="info" onClick={() => {props.handleClickPage(PAGE.QUIZ)}}>Quiz</button>
+        <button className="info" onClick={() => {props.handleClickPage(PAGE.REVIEW)}}>Review</button>
+        <button className="primary" onClick={() => {props.handleClickPage(PAGE.RESULT)}}>Submit Quiz</button>
       </div>
     </div>
   );

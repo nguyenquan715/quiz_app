@@ -7,6 +7,7 @@
   margin: auto;
   .header{
     border-bottom: 0.5px solid rgb(190, 189, 189);
+    margin-bottom: 15px;
     .header-above{
       display: flex;
       justify-content: space-between;
@@ -38,6 +39,7 @@
   .footer{
     border-top: 0.5px solid rgb(190, 189, 189);
     padding: 15px 0;
+    margin-top: 15px;
     .button-block{
       button{
         padding: 10px;        

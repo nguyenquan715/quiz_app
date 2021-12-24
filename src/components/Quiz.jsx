@@ -1,9 +1,11 @@
-import { Layout } from './../common/Layout';
+import { useEffect, useRef, useState } from 'react';
 
-export const Quiz = (props) => {
-  return (
-    <Layout>
-      <h2>Quiz</h2>
-    </Layout>
+export const Quiz = (props) => {  
+  useEffect(() => {
+
+  }, []);
+
+  return (    
+    <h2>Quiz</h2>    
   );
 }
