@@ -5,12 +5,12 @@
   .answer-status{
     color: white;
     padding: 15px;
-    background-color: #ffc107;
+    background-color: var(--warning-color);
     font-size: 20px;
     margin: 5px 0;
     width: 30%;    
   }
   .answered{
-    background-color: #17a2b8;
+    background-color: var(--info-color);
   }
 }

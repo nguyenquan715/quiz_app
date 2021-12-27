@@ -1,0 +1,43 @@
+.question-block{
+  padding: 5px;
+  background-color: rgb(231, 230, 230);
+  margin-bottom: 10px;
+  .question-content{
+    b{
+      font-size: 20px;
+      color: var(--text-color);
+    }
+  }
+  .answers{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+    .option{
+      width: 50%;
+      margin: 5px 0;
+      display: flex;
+      align-items: center;
+      label{
+        margin-left: 5px;
+      }
+    }
+  }
+  .question-result{
+    text-align: left;
+  }
+  .correct{
+    color: green;
+  }
+  .incorrect{
+    color: red;
+  }
+}
+.question-correct{
+  border-left: 4px solid green;
+  border-right: 4px solid green;
+}
+.question-incorrect{
+  border-left: 4px solid red;
+  border-right: 4px solid red;
+}

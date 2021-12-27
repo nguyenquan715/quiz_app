@@ -1,3 +1,10 @@
+:root{
+  --border-gray: rgb(190, 189, 189);
+  --info-color: #17a2b8;
+  --primary-color: #007bff;
+  --warning-color: #ffc107;
+  --text-color: #212529;
+}
 *{
   font-size: 15px;
   box-sizing: border-box;
@@ -6,7 +13,7 @@
   width: 60%;
   margin: auto;
   .header{
-    border-bottom: 0.5px solid rgb(190, 189, 189);
+    border-bottom: 0.5px solid var(--border-gray);
     margin-bottom: 15px;
     .header-above{
       display: flex;
@@ -37,24 +44,24 @@
     }
   }
   .footer{
-    border-top: 0.5px solid rgb(190, 189, 189);
+    border-top: 0.5px solid var(--border-gray);
     padding: 15px 0;
     margin-top: 15px;
     .button-block{
       button{
         padding: 10px;        
-        font-size: 20px;
+        font-size: 15px;
         color: white;
         margin-right: 10px;
         font-weight: lighter;
         cursor: pointer;
       }
       .info {
-        background-color: rgb(14, 150, 204);
+        background-color: var(--info-color);
         border: 0;
       }
       .primary {
-        background-color: rgb(101, 134, 241);
+        background-color: var(--primary-color);
         border: 0;
       }
     }
